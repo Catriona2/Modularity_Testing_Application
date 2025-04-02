@@ -1,8 +1,6 @@
 package com.converter;
 import com.rates.ExchangeRateProvider;
-
 public class CurrencyConverter {
-
     public static double convert(String from, String to, double amount) {
         double rate = ExchangeRateProvider.getRate(from, to);
         if (rate < 0) {
